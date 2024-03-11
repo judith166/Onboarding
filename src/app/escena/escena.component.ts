@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { iStep } from '../interfaces/iStep.interface';
-import { CommonModule } from '@angular/common';
+import { CommonModule, } from '@angular/common';
 
 @Component({
   selector: 'app-escena',
@@ -11,32 +11,24 @@ import { CommonModule } from '@angular/common';
 })
 export class EscenaComponent {
   @Input()
-  public ShowPhrases: iStep [] = [{
-    title: '',
-    description: '',
-    img: '',
-    bgcolor: ''
-  }];
+  public ShowPhrases: iStep [] = [];
 
   public actualStep: number = 0;
 
-  lastStep() {
+  lastStep(): void {
     if (this.actualStep > 0) {
       this.actualStep--;
     } else {
       this.actualStep = this.ShowPhrases.length - 1;
     }
-    console.log(this.actualStep);
   }
 
-  nextStep() {
+  nextStep(): void {
     if (this.actualStep < this.ShowPhrases.length - 1) {
       this.actualStep++;
     } else {
       this.actualStep = 0
     }
-
-    console.log(this.actualStep)
   }
 
   activeStep(index: number) {
