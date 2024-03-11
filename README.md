@@ -37,14 +37,6 @@ La aplicación muestra tarjetas de Onboarding con información y botones para na
 4. Empuja los cambios a la rama (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
 
-## Créditos
-
-Este proyecto fue desarrollado por [Tu Nombre].
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
-
 
 
 
